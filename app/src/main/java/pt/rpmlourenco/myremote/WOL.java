@@ -19,18 +19,6 @@ class WOL extends AsyncTask<String, String, String> {
     }
     */
 
-    @Override
-    protected String doInBackground(String... params) {
-        String macAddress = params[0];
-        int port = 9;
-        try {
-            wakeUp(macAddress, port);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     private static void wakeUp(String macAddress, int port) throws IOException {
         byte[] bytes = getMagicBytes(macAddress);
         InetAddress address = getMulticastAddress();
@@ -47,7 +35,7 @@ class WOL extends AsyncTask<String, String, String> {
 
     private static InetAddress getMulticastAddress()
             throws UnknownHostException {
-        return InetAddress.getByAddress(new byte[] {-1, -1, -1, -1});
+        return InetAddress.getByAddress(new byte[]{-1, -1, -1, -1});
     }
 
     private static byte[] getMagicBytes(String macAddress) throws IOException {
@@ -70,6 +58,18 @@ class WOL extends AsyncTask<String, String, String> {
         for (int i = 0, j = 0; i < string.length(); i += 2, j++)
             bytes[j] = (byte) Integer.parseInt(string.substring(i, i + 2), 16);
         return bytes;
+    }
+
+    @Override
+    protected String doInBackground(String... params) {
+        String macAddress = params[0];
+        int port = 9;
+        try {
+            wakeUp(macAddress, port);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }

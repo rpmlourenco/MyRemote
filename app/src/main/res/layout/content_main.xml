@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -15,20 +13,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="5dp"
-        android:text="Amplificador NAD"/>
+        android:text="Amplificador NAD" />
 
     <ImageView
-        android:contentDescription="Power"
         android:id="@+id/sbpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
         android:layout_margin="5dp"
+        android:contentDescription="Power"
         android:src="@drawable/ic_action_power" />
 
     <ImageView
-        android:contentDescription="Volume Up"
         android:id="@+id/sbvolup"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -36,10 +33,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@+id/sbvoldown"
-        android:src="@drawable/ic_action_up"/>
+        android:contentDescription="Volume Up"
+        android:src="@drawable/ic_action_up" />
 
     <ImageView
-        android:contentDescription="Volume Down"
         android:id="@+id/sbvoldown"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -47,10 +44,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@+id/sbvolmute"
-        android:src="@drawable/ic_action_down"/>
+        android:contentDescription="Volume Down"
+        android:src="@drawable/ic_action_down" />
 
     <ImageView
-        android:contentDescription="Mute"
         android:id="@+id/sbvolmute"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -58,10 +55,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@+id/sbpower"
-        android:src="@drawable/ic_action_mute"/>
+        android:contentDescription="Mute"
+        android:src="@drawable/ic_action_mute" />
 
     <ImageView
-        android:contentDescription="Video"
         android:id="@+id/sbvideo"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -69,10 +66,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@+id/sbvolup"
-        android:src="@drawable/ic_action_tv"/>
+        android:contentDescription="Video"
+        android:src="@drawable/ic_action_tv" />
 
     <ImageView
-        android:contentDescription="Aux"
         android:id="@+id/sbaux"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -80,7 +77,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@+id/sbvideo"
-        android:src="@drawable/ic_action_music"/>
+        android:contentDescription="Aux"
+        android:src="@drawable/ic_action_music" />
 
     <TextView
         android:id="@+id/textView2"
@@ -92,20 +90,19 @@
         android:layout_below="@+id/sbpower"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="10dp"
-        android:text="TV Samsung"/>
+        android:text="TV Samsung" />
 
     <ImageView
-        android:contentDescription="Power"
         android:id="@+id/tvpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_margin="5dp"
-        android:src="@drawable/ic_action_power"/>
+        android:contentDescription="Power"
+        android:src="@drawable/ic_action_power" />
 
     <ImageView
-        android:contentDescription="HDMI1"
         android:id="@+id/tvhdmi1"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -113,10 +110,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvpower"
-        android:src="@drawable/ic_action_movistar"/>
+        android:contentDescription="HDMI1"
+        android:src="@drawable/ic_action_movistar" />
 
     <ImageView
-        android:contentDescription="HDMI2"
         android:id="@+id/tvhdmi2"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -124,10 +121,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvhdmi1"
-        android:src="@drawable/ic_action_pc"/>
+        android:contentDescription="HDMI2"
+        android:src="@drawable/ic_action_pc" />
 
     <ImageView
-        android:contentDescription="HDMI3"
         android:id="@+id/tvhdmi3"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -135,10 +132,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvhdmi2"
-        android:src="@drawable/ic_action_gamepad"/>
+        android:contentDescription="HDMI3"
+        android:src="@drawable/ic_action_gamepad" />
 
     <ImageView
-        android:contentDescription="OK"
         android:id="@+id/tvok"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -146,10 +143,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvhdmi3"
-        android:src="@drawable/ic_action_ok"/>
+        android:contentDescription="OK"
+        android:src="@drawable/ic_action_ok" />
 
     <ImageView
-        android:contentDescription="WOL"
         android:id="@+id/wol"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -157,7 +154,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/tvok"
-        android:src="@drawable/ic_action_wake_pc"/>
+        android:contentDescription="WOL"
+        android:src="@drawable/ic_action_wake_pc" />
 
     <TextView
         android:id="@+id/textView3"
@@ -169,20 +167,19 @@
         android:layout_below="@+id/tvpower"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="10dp"
-        android:text="Movistar"/>
+        android:text="Movistar" />
 
     <ImageView
-        android:contentDescription="Power"
         android:id="@+id/stbpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView3"
         android:layout_margin="5dp"
-        android:src="@drawable/ic_action_power"/>
+        android:contentDescription="Power"
+        android:src="@drawable/ic_action_power" />
 
     <ImageView
-        android:contentDescription="Guide"
         android:id="@+id/stbguide"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -190,10 +187,10 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/stbpower"
-        android:src="@drawable/ic_action_list"/>
+        android:contentDescription="Guide"
+        android:src="@drawable/ic_action_list" />
 
     <ImageView
-        android:contentDescription="Back"
         android:id="@+id/stbback"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -201,305 +198,297 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_toEndOf="@id/stbguide"
-        android:src="@drawable/ic_action_back"/>
+        android:contentDescription="Back"
+        android:src="@drawable/ic_action_back" />
 
 
     <Button
-        android:text="1"
-        android:layout_width="40dp"
         android:id="@+id/button_1"
-        android:layout_alignTop="@+id/stbpower"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_2"
+        android:layout_alignTop="@+id/stbpower"
 
         android:layout_marginEnd="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:text="1" />
 
     <Button
-        android:text="2"
-        android:layout_width="40dp"
         android:id="@+id/button_2"
-        android:layout_alignTop="@+id/stbpower"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_3"
-        android:layout_marginEnd="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp" />
-
-
-    <Button
-        android:text="3"
-        android:layout_width="40dp"
-        android:id="@+id/button_3"
         android:layout_alignTop="@+id/stbpower"
-        android:layout_alignStart="@+id/sbaux"
-        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="15dp"
+        android:text="2" />
+
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp" />
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="3" />
 
 
     <Button
-        android:text="4"
-        android:layout_width="40dp"
         android:id="@+id/button_4"
-        android:layout_below="@+id/button_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_5"
+        android:layout_below="@+id/button_1"
         android:layout_marginEnd="40dp"
-        android:layout_height="40dp" />
+        android:text="4" />
 
 
     <Button
-        android:text="5"
-        android:layout_width="40dp"
         android:id="@+id/button_5"
-        android:layout_below="@+id/button_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_6"
-        android:layout_marginEnd="40dp"
-        android:layout_height="40dp" />
-
-
-    <Button
-        android:text="6"
-        android:layout_width="40dp"
-        android:id="@+id/button_6"
         android:layout_below="@+id/button_1"
-        android:layout_alignStart="@+id/sbaux"
-        android:layout_marginLeft="5dp"
-        android:layout_height="40dp" />
+        android:layout_marginEnd="40dp"
+        android:text="5" />
+
 
     <Button
-        android:text="7"
+        android:id="@+id/button_6"
         android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_below="@+id/button_1"
+        android:layout_marginLeft="5dp"
+        android:text="6" />
+
+    <Button
         android:id="@+id/button_7"
-        android:layout_below="@+id/button_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_8"
+        android:layout_below="@+id/button_4"
         android:layout_marginEnd="40dp"
-        android:layout_height="40dp" />
+        android:text="7" />
 
 
     <Button
-        android:text="8"
-        android:layout_width="40dp"
         android:id="@+id/button_8"
-        android:layout_below="@+id/button_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_9"
+        android:layout_below="@+id/button_4"
         android:layout_marginEnd="40dp"
-        android:layout_height="40dp" />
+        android:text="8" />
 
 
     <Button
-        android:text="9"
-        android:layout_width="40dp"
         android:id="@+id/button_9"
-        android:layout_below="@+id/button_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignStart="@+id/sbaux"
+        android:layout_below="@+id/button_4"
         android:layout_marginLeft="5dp"
-        android:layout_height="40dp" />
+        android:text="9" />
 
 
     <ImageView
-        android:contentDescription="Channel Up"
         android:id="@+id/stbchup"
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:layout_alignStart="@+id/stbpower"
+        android:layout_below="@+id/stbpower"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/ic_action_chup"
-        android:layout_below="@+id/stbpower"
-        android:layout_alignStart="@+id/stbpower" />
+        android:contentDescription="Channel Up"
+        android:src="@drawable/ic_action_chup" />
 
     <Button
-        android:text="0"
         android:id="@+id/button_0"
-        android:layout_below="@+id/button_8"
-        android:layout_alignEnd="@+id/stbchprev"
-        android:layout_marginEnd="40dp"
         android:layout_width="40dp"
-        android:layout_height="40dp" />
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/stbchprev"
+        android:layout_below="@+id/button_8"
+        android:layout_marginEnd="40dp"
+        android:text="0" />
 
     <Button
-        android:text="P"
         android:id="@+id/stbchprev"
-        android:layout_below="@+id/button_9"
-        android:layout_alignStart="@+id/sbaux"
-        android:layout_marginLeft="5dp"
         android:layout_width="40dp"
-        android:layout_height="40dp" />
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_below="@+id/button_9"
+        android:layout_marginLeft="5dp"
+        android:text="P" />
 
     <TextView
-        android:text="CANAL"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/stbchup"
         android:layout_below="@+id/stbchup"
-        android:layout_alignStart="@+id/stbchup" />
+        android:layout_marginTop="10dp"
+        android:text="CANAL" />
 
     <ImageView
-        android:contentDescription="Channel Down"
         android:id="@+id/stbchdown"
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:layout_alignStart="@+id/stbchup"
+        android:layout_below="@+id/textView4"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="5dp"
-        android:src="@drawable/ic_action_chdown"
-        android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/stbchup"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:contentDescription="Channel Down"
+        android:src="@drawable/ic_action_chdown" />
 
     <ImageView
-        android:contentDescription="Up"
         android:id="@+id/stbup"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_action_arrowup"
+        android:layout_alignEnd="@+id/button_4"
         android:layout_below="@+id/stbpower"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="95dp"
-        android:layout_alignEnd="@+id/button_4" />
+        android:layout_marginTop="5dp"
+        android:contentDescription="Up"
+        android:src="@drawable/ic_action_arrowup" />
 
     <ImageView
-        android:contentDescription="Down"
         android:id="@+id/stbdown"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_action_arrowdown"
+        android:layout_alignStart="@+id/stbup"
         android:layout_below="@+id/stbleft"
-        android:layout_alignStart="@+id/stbup" />
+        android:contentDescription="Down"
+        android:src="@drawable/ic_action_arrowdown" />
 
     <ImageView
-        android:contentDescription="Right"
         android:id="@+id/stbright"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_action_arrowright"
-        android:layout_below="@+id/stbup"
         android:layout_alignEnd="@+id/stbup"
+        android:layout_below="@+id/stbup"
         android:layout_marginRight="-45dp"
-        />
+        android:contentDescription="Right"
+        android:src="@drawable/ic_action_arrowright" />
 
     <ImageView
-        android:contentDescription="Left"
         android:id="@+id/stbleft"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_action_arrowleft"
+        android:layout_alignEnd="@+id/stbup"
         android:layout_below="@+id/stbup"
         android:layout_marginEnd="45dp"
-        android:layout_alignEnd="@+id/stbup" />
+        android:contentDescription="Left"
+        android:src="@drawable/ic_action_arrowleft" />
 
     <ImageView
-        android:contentDescription="OK"
         android:id="@+id/stbok"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_action_ok"
+        android:layout_alignEnd="@+id/stbup"
         android:layout_below="@+id/stbup"
-        android:layout_alignEnd="@+id/stbup" />
+        android:contentDescription="OK"
+        android:src="@drawable/ic_action_ok" />
 
     <Button
-        android:contentDescription="Menu"
-        android:text="M"
-        android:layout_width="40dp"
         android:id="@+id/stbmenu"
-        android:layout_below="@+id/button_7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/button_8"
+        android:layout_below="@+id/button_7"
         android:layout_marginEnd="40dp"
-        android:layout_height="40dp" />
+        android:contentDescription="Menu"
+        android:text="M" />
 
     <ImageView
-        android:contentDescription="Blue"
         android:id="@+id/stbblue"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_blue"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbchprev"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="0dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Blue"
+        android:src="@drawable/ic_action_blue" />
 
     <ImageView
-        android:contentDescription="Yellow"
         android:id="@+id/stbyellow"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_yellow"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbblue"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Yellow"
+        android:src="@drawable/ic_action_yellow" />
 
     <ImageView
-        android:contentDescription="Green"
         android:id="@+id/stbgreen"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_green"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbyellow"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Green"
+        android:src="@drawable/ic_action_green" />
 
     <ImageView
-        android:contentDescription="Red"
         android:id="@+id/stbred"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_red"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbgreen"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Red"
+        android:src="@drawable/ic_action_red" />
 
     <ImageView
-        android:contentDescription="Fast Forward"
         android:id="@+id/stbfforward"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_fastforward"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbred"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="55dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Fast Forward"
+        android:src="@drawable/ic_action_fastforward" />
 
     <ImageView
-        android:contentDescription="Pause"
         android:id="@+id/stbpause"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_pause"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbfforward"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Pause"
+        android:src="@drawable/ic_action_pause" />
 
     <ImageView
-        android:contentDescription="Play"
         android:id="@+id/stbplay"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_play"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbpause"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Play"
+        android:src="@drawable/ic_action_play" />
 
     <ImageView
-        android:contentDescription="Rewind"
         android:id="@+id/stbrewind"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_action_rewind"
-        android:layout_below="@+id/stbchprev"
         android:layout_alignEnd="@+id/stbplay"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/stbchprev"
         android:layout_marginRight="40dp"
-        />
+        android:layout_marginTop="25dp"
+        android:contentDescription="Rewind"
+        android:src="@drawable/ic_action_rewind" />
 
 </RelativeLayout>
