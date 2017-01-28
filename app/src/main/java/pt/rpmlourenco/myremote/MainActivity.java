@@ -16,12 +16,16 @@
 package pt.rpmlourenco.myremote;
 
 import android.app.Activity;
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.os.Vibrator;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
@@ -127,8 +131,20 @@ public class MainActivity extends Activity {
             "0000 004A 0000 0011 0037 0035 0023 0048 0012 0024 0012 0036 0012 0036 0012 0036 0012 0036 0012 0036 0012 0036 0012 005A 0012 0036 0012 0036 0012 0011 0012 0036 0012 006D 0012 0011 0012 1125";
 
     @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+
+    }
+
+    @Override
     protected void onCreate(final Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(pt.rpmlourenco.myremote.R.layout.content_main);
 
         // TV
