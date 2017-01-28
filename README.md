@@ -1,4 +1,4 @@
 # IR-Remote
-Simple Android IR-Remote for my Samsung TV and Samsung Soundbar
+Simple Android IR-Remote and WOL for my Samsung TV, NAD Amplifier, Movistar STP and HPTC
 
 <img width="200px" src="screenshot.png" />
