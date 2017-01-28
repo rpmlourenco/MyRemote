@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="Amplificador NAD"/>
+
+    <ImageView
+        android:id="@+id/sbpower"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_action_power" />
+
+    <ImageView
+        android:id="@+id/sbvolup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/sbvoldown"
+        android:src="@drawable/ic_action_up"/>
+
+    <ImageView
+        android:id="@+id/sbvoldown"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/sbvolmute"
+        android:src="@drawable/ic_action_down"/>
+
+    <ImageView
+        android:id="@+id/sbvolmute"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/sbpower"
+        android:src="@drawable/ic_action_mute"/>
+
+    <ImageView
+        android:id="@+id/sbvideo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/sbvolup"
+        android:src="@drawable/ic_action_tv"/>
+
+    <ImageView
+        android:id="@+id/sbaux"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/sbvideo"
+        android:src="@drawable/ic_action_music"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sbpower"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="TV Samsung"/>
+
+    <ImageView
+        android:id="@+id/tvpower"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_action_power"/>
+
+    <ImageView
+        android:id="@+id/tvhdmi1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvpower"
+        android:src="@drawable/ic_action_movistar"/>
+
+    <ImageView
+        android:id="@+id/tvhdmi2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvhdmi1"
+        android:src="@drawable/ic_action_pc"/>
+
+    <ImageView
+        android:id="@+id/tvhdmi3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvhdmi2"
+        android:src="@drawable/ic_action_gamepad"/>
+
+    <ImageView
+        android:id="@+id/tvok"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvhdmi3"
+        android:src="@drawable/ic_action_ok"/>
+
+    <ImageView
+        android:id="@+id/wol"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/tvok"
+        android:src="@drawable/ic_action_wake_pc"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvpower"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Movistar"/>
+
+    <ImageView
+        android:id="@+id/stbpower"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_action_power"/>
+
+    <ImageView
+        android:id="@+id/stbguide"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/stbpower"
+        android:src="@drawable/ic_action_list"/>
+
+    <ImageView
+        android:id="@+id/stbback"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/stbguide"
+        android:src="@drawable/ic_action_back"/>
+
+
+    <Button
+        android:text="1"
+        android:layout_width="40dp"
+        android:id="@+id/button_1"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_alignEnd="@+id/button_2"
+
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="2"
+        android:layout_width="40dp"
+        android:id="@+id/button_2"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_alignEnd="@+id/button_3"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp" />
+
+
+    <Button
+        android:text="3"
+        android:layout_width="40dp"
+        android:id="@+id/button_3"
+        android:layout_alignTop="@+id/stbpower"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_marginLeft="5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp" />
+
+
+    <Button
+        android:text="4"
+        android:layout_width="40dp"
+        android:id="@+id/button_4"
+        android:layout_below="@+id/button_1"
+        android:layout_alignEnd="@+id/button_5"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:text="5"
+        android:layout_width="40dp"
+        android:id="@+id/button_5"
+        android:layout_below="@+id/button_1"
+        android:layout_alignEnd="@+id/button_6"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:text="6"
+        android:layout_width="40dp"
+        android:id="@+id/button_6"
+        android:layout_below="@+id/button_1"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_marginLeft="5dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="7"
+        android:layout_width="40dp"
+        android:id="@+id/button_7"
+        android:layout_below="@+id/button_4"
+        android:layout_alignEnd="@+id/button_8"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:text="8"
+        android:layout_width="40dp"
+        android:id="@+id/button_8"
+        android:layout_below="@+id/button_4"
+        android:layout_alignEnd="@+id/button_9"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:text="9"
+        android:layout_width="40dp"
+        android:id="@+id/button_9"
+        android:layout_below="@+id/button_4"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_marginLeft="5dp"
+        android:layout_height="40dp" />
+
+
+    <ImageView
+        android:id="@+id/stbchup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_action_chup"
+        android:layout_below="@+id/stbpower"
+        android:layout_alignStart="@+id/stbpower" />
+
+    <Button
+        android:text="0"
+        android:id="@+id/button_0"
+        android:layout_below="@+id/button_8"
+        android:layout_alignEnd="@+id/stbchprev"
+        android:layout_marginEnd="40dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="P"
+        android:id="@+id/stbchprev"
+        android:layout_below="@+id/button_9"
+        android:layout_alignStart="@+id/sbaux"
+        android:layout_marginLeft="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="CANAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/stbchup"
+        android:layout_alignStart="@+id/stbchup" />
+
+    <ImageView
+        android:id="@+id/stbchdown"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_action_chdown"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/stbchup"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/stbup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_arrowup"
+        android:layout_below="@+id/stbpower"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="95dp"
+        android:layout_alignEnd="@+id/button_4" />
+
+    <ImageView
+        android:id="@+id/stbdown"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_arrowdown"
+        android:layout_below="@+id/stbleft"
+        android:layout_alignStart="@+id/stbup" />
+
+    <ImageView
+        android:id="@+id/stbright"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_arrowright"
+        android:layout_below="@+id/stbup"
+        android:layout_alignEnd="@+id/stbup"
+        android:layout_marginRight="-45dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbleft"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_arrowleft"
+        android:layout_below="@+id/stbup"
+        android:layout_marginEnd="45dp"
+        android:layout_alignEnd="@+id/stbup" />
+
+    <ImageView
+        android:id="@+id/stbok"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_action_ok"
+        android:layout_below="@+id/stbup"
+        android:layout_alignEnd="@+id/stbup" />
+
+    <Button
+        android:text="M"
+        android:layout_width="40dp"
+        android:id="@+id/stbmenu"
+        android:layout_below="@+id/button_7"
+        android:layout_alignEnd="@+id/button_8"
+        android:layout_marginEnd="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:id="@+id/stbblue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_blue"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbchprev"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="0dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbyellow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_yellow"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbblue"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbgreen"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_green"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbyellow"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbred"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_red"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbgreen"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbfforward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_fastforward"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbred"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="55dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbpause"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_pause"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbfforward"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbplay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_play"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbpause"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/stbrewind"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_rewind"
+        android:layout_below="@+id/stbchprev"
+        android:layout_alignEnd="@+id/stbplay"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+
+</RelativeLayout>
