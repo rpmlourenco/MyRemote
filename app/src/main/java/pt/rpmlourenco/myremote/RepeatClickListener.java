@@ -10,22 +10,23 @@ import java.util.List;
 
 /**
  * Created by Rui on 22/01/2017.
+ * Repeat
  */
 
 public class RepeatClickListener implements View.OnClickListener {
 
-    public static IRCommand repeatCmd;
+    private final IRCommand repeatCmd;
     private final IRCommand cmd;
     private final ConsumerIrManager irManager;
     private boolean init;
 
     public RepeatClickListener(final String hex, MainActivity main) {
         this.cmd = hex2ir(hex);
-        this.repeatCmd = hex2ir(MainActivity.CMD_SB_NEC_REPEAT);
+        repeatCmd = hex2ir(MainActivity.CMD_SB_NEC_REPEAT);
         irManager = (ConsumerIrManager) main.getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
     }
 
-    public boolean isInit() {
+    private boolean isInit() {
         return init;
     }
 

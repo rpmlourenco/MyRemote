@@ -19,7 +19,7 @@ import android.widget.ImageView;
  * If it runs slow, it does not generate skipped onClicks. Can be rewritten to
  * achieve this.
  */
-public class RepeatListener implements OnTouchListener {
+class RepeatListener implements OnTouchListener {
 
     private final Handler handler = new Handler();
     private final int normalInterval;

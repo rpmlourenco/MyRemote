@@ -18,6 +18,7 @@
         android:text="Amplificador NAD"/>
 
     <ImageView
+        android:contentDescription="Power"
         android:id="@+id/sbpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -27,6 +28,7 @@
         android:src="@drawable/ic_action_power" />
 
     <ImageView
+        android:contentDescription="Volume Up"
         android:id="@+id/sbvolup"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -37,6 +39,7 @@
         android:src="@drawable/ic_action_up"/>
 
     <ImageView
+        android:contentDescription="Volume Down"
         android:id="@+id/sbvoldown"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -47,6 +50,7 @@
         android:src="@drawable/ic_action_down"/>
 
     <ImageView
+        android:contentDescription="Mute"
         android:id="@+id/sbvolmute"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -57,6 +61,7 @@
         android:src="@drawable/ic_action_mute"/>
 
     <ImageView
+        android:contentDescription="Video"
         android:id="@+id/sbvideo"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -67,6 +72,7 @@
         android:src="@drawable/ic_action_tv"/>
 
     <ImageView
+        android:contentDescription="Aux"
         android:id="@+id/sbaux"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -89,6 +95,7 @@
         android:text="TV Samsung"/>
 
     <ImageView
+        android:contentDescription="Power"
         android:id="@+id/tvpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -98,6 +105,7 @@
         android:src="@drawable/ic_action_power"/>
 
     <ImageView
+        android:contentDescription="HDMI1"
         android:id="@+id/tvhdmi1"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -108,6 +116,7 @@
         android:src="@drawable/ic_action_movistar"/>
 
     <ImageView
+        android:contentDescription="HDMI2"
         android:id="@+id/tvhdmi2"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -118,6 +127,7 @@
         android:src="@drawable/ic_action_pc"/>
 
     <ImageView
+        android:contentDescription="HDMI3"
         android:id="@+id/tvhdmi3"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -128,6 +138,7 @@
         android:src="@drawable/ic_action_gamepad"/>
 
     <ImageView
+        android:contentDescription="OK"
         android:id="@+id/tvok"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -138,6 +149,7 @@
         android:src="@drawable/ic_action_ok"/>
 
     <ImageView
+        android:contentDescription="WOL"
         android:id="@+id/wol"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -160,6 +172,7 @@
         android:text="Movistar"/>
 
     <ImageView
+        android:contentDescription="Power"
         android:id="@+id/stbpower"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -169,6 +182,7 @@
         android:src="@drawable/ic_action_power"/>
 
     <ImageView
+        android:contentDescription="Guide"
         android:id="@+id/stbguide"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -179,6 +193,7 @@
         android:src="@drawable/ic_action_list"/>
 
     <ImageView
+        android:contentDescription="Back"
         android:id="@+id/stbback"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -282,6 +297,7 @@
 
 
     <ImageView
+        android:contentDescription="Channel Up"
         android:id="@+id/stbchup"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -319,6 +335,7 @@
         android:layout_alignStart="@+id/stbchup" />
 
     <ImageView
+        android:contentDescription="Channel Down"
         android:id="@+id/stbchdown"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -330,6 +347,7 @@
         android:layout_marginTop="10dp" />
 
     <ImageView
+        android:contentDescription="Up"
         android:id="@+id/stbup"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -340,6 +358,7 @@
         android:layout_alignEnd="@+id/button_4" />
 
     <ImageView
+        android:contentDescription="Down"
         android:id="@+id/stbdown"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -348,6 +367,7 @@
         android:layout_alignStart="@+id/stbup" />
 
     <ImageView
+        android:contentDescription="Right"
         android:id="@+id/stbright"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -358,6 +378,7 @@
         />
 
     <ImageView
+        android:contentDescription="Left"
         android:id="@+id/stbleft"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -367,6 +388,7 @@
         android:layout_alignEnd="@+id/stbup" />
 
     <ImageView
+        android:contentDescription="OK"
         android:id="@+id/stbok"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -375,6 +397,7 @@
         android:layout_alignEnd="@+id/stbup" />
 
     <Button
+        android:contentDescription="Menu"
         android:text="M"
         android:layout_width="40dp"
         android:id="@+id/stbmenu"
@@ -384,6 +407,7 @@
         android:layout_height="40dp" />
 
     <ImageView
+        android:contentDescription="Blue"
         android:id="@+id/stbblue"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -395,6 +419,7 @@
         />
 
     <ImageView
+        android:contentDescription="Yellow"
         android:id="@+id/stbyellow"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -406,6 +431,7 @@
         />
 
     <ImageView
+        android:contentDescription="Green"
         android:id="@+id/stbgreen"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -417,6 +443,7 @@
         />
 
     <ImageView
+        android:contentDescription="Red"
         android:id="@+id/stbred"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -428,6 +455,7 @@
         />
 
     <ImageView
+        android:contentDescription="Fast Forward"
         android:id="@+id/stbfforward"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -439,6 +467,7 @@
         />
 
     <ImageView
+        android:contentDescription="Pause"
         android:id="@+id/stbpause"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -450,6 +479,7 @@
         />
 
     <ImageView
+        android:contentDescription="Play"
         android:id="@+id/stbplay"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -461,6 +491,7 @@
         />
 
     <ImageView
+        android:contentDescription="Rewind"
         android:id="@+id/stbrewind"
         android:layout_width="30dp"
         android:layout_height="30dp"

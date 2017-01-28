@@ -9,7 +9,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class WOL extends AsyncTask<String, String, String> {
+class WOL extends AsyncTask<String, String, String> {
 
     /*
     public static void main(String[] args) throws IOException {
