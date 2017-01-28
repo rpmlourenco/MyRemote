@@ -3,6 +3,7 @@ package pt.rpmlourenco.myremote;
 import android.content.Context;
 import android.hardware.ConsumerIrManager;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,9 +20,11 @@ public class RepeatClickListener implements View.OnClickListener {
     private final IRCommand cmd;
     private final ConsumerIrManager irManager;
     private boolean init;
+    private MainActivity main;
 
     public RepeatClickListener(final String hex, MainActivity main) {
         this.cmd = hex2ir(hex);
+        this.main = main;
         repeatCmd = hex2ir(MainActivity.CMD_SB_NEC_REPEAT);
         irManager = (ConsumerIrManager) main.getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
     }
@@ -36,10 +39,15 @@ public class RepeatClickListener implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (isInit()) {
-            irManager.transmit(cmd.freq, cmd.pattern);
-        } else {
-            irManager.transmit(this.repeatCmd.freq, this.repeatCmd.pattern);
+
+        try {
+            if (isInit()) {
+                irManager.transmit(cmd.freq, cmd.pattern);
+            } else {
+                irManager.transmit(this.repeatCmd.freq, this.repeatCmd.pattern);
+            }
+        } catch (Exception e) {
+            Toast.makeText(main.getApplicationContext(), "IR emitter not available", Toast.LENGTH_SHORT).show();
         }
     }
 
