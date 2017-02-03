@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:id="@+id/remotelayout">
 
     <TextView
         android:id="@+id/textView"
@@ -145,17 +146,6 @@
         android:layout_toEndOf="@id/tvhdmi3"
         android:contentDescription="OK"
         android:src="@drawable/ic_action_ok" />
-
-    <ImageView
-        android:id="@+id/wol"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_alignTop="@+id/tvpower"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_toEndOf="@id/tvok"
-        android:contentDescription="WOL"
-        android:src="@drawable/ic_action_wake_pc" />
 
     <TextView
         android:id="@+id/textView3"
@@ -345,17 +335,6 @@
         android:src="@drawable/ic_action_chdown" />
 
     <ImageView
-        android:id="@+id/stbup"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_alignEnd="@+id/button_4"
-        android:layout_below="@+id/stbpower"
-        android:layout_marginEnd="95dp"
-        android:layout_marginTop="5dp"
-        android:contentDescription="Up"
-        android:src="@drawable/ic_action_arrowup" />
-
-    <ImageView
         android:id="@+id/stbdown"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -490,5 +469,14 @@
         android:layout_marginTop="25dp"
         android:contentDescription="Rewind"
         android:src="@drawable/ic_action_rewind" />
+
+    <ImageView
+        android:id="@+id/stbup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:contentDescription="Up"
+        android:src="@drawable/ic_action_arrowup"
+        android:layout_below="@+id/button_1"
+        android:layout_alignEnd="@+id/stbfforward" />
 
 </RelativeLayout>

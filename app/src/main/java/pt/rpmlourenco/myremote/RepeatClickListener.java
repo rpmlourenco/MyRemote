@@ -25,7 +25,7 @@ public class RepeatClickListener implements View.OnClickListener {
     public RepeatClickListener(final String hex, MainActivity main) {
         this.cmd = hex2ir(hex);
         this.main = main;
-        repeatCmd = hex2ir(MainActivity.CMD_SB_NEC_REPEAT);
+        repeatCmd = hex2ir(main.getResources().getString(R.string.CMD_SB_NEC_REPEAT));
         irManager = (ConsumerIrManager) main.getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
     }
 

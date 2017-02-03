@@ -6,6 +6,8 @@
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
+        <item name="android:color">@color/accent</item>
+        <item name="android:actionBarPopupTheme">@style/AppTheme.ActionBarPopupTheme</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -13,6 +15,10 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ActionBarPopupTheme" parent="android:ThemeOverlay.Material">
+        <item name="android:colorBackground">@color/primary_dark</item>
     </style>
 
 </resources>
