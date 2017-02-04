@@ -17,20 +17,20 @@ package pt.rpmlourenco.myremote;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.PorterDuff;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -97,11 +97,13 @@ public class MainActivity extends Activity {
         if (id == R.id.amenu_wakep8z77i) {
 
             new WOL().execute(getString(R.string.P8Z77I_RUI_MAC));
+            Toast.makeText(activity.getApplicationContext(), "P8Z77I woken", Toast.LENGTH_SHORT).show();
             return true;
         }
         if (id == R.id.amenu_wakeasusefi) {
 
             new WOL().execute(getString(R.string.ASUS_EFI_MAC));
+            Toast.makeText(activity.getApplicationContext(), "ASUS-EFI woken", Toast.LENGTH_SHORT).show();
             return true;
         }
         if (id == R.id.amenu_itunes) {
@@ -116,7 +118,26 @@ public class MainActivity extends Activity {
             new TCPClient(activity).execute(params);
             return true;
         }
+        if (id == R.id.amenu_retune) {
+            startNewActivity(activity.getBaseContext(),"com.squallydoc.retune");
+            return true;
+        }
+        if (id == R.id.amenu_rmouse) {
+            startNewActivity(activity.getBaseContext(),"com.hungrybolo.remotemouseandroid");
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startNewActivity(Context context, String packageName) {
+        Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+        if (intent == null) {
+            // Bring user to the market or let them choose an app?
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("market://details?id=" + packageName));
+        }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 }

@@ -72,5 +72,4 @@ class TCPClient extends AsyncTask<TCPClientParams, Void, String>
         Toast.makeText(activity.getApplicationContext(), result, Toast.LENGTH_SHORT).show();
     }
 
-
 }

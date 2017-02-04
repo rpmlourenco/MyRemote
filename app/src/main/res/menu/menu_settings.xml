@@ -7,17 +7,23 @@
     <item android:id="@+id/action_settings"
         android:title="Menu"
         android:showAsAction="never" >
+            <item android:title="Wake ASUS-EFI"
+                android:id="@+id/amenu_wakeasusefi"/>
+
+            <item android:title="Start iTunes"
+                android:id="@+id/amenu_itunes"/>
+
+            <item android:title="Retune"
+                android:id="@+id/amenu_retune"/>
+
+            <item android:title="Shutown ASUS-EFI"
+                android:id="@+id/amenu_shutdown"/>
+
             <item android:title="Wake P8Z77I"
                   android:id="@+id/amenu_wakep8z77i"/>
 
-            <item android:title="Wake ASUS-EFI"
-            android:id="@+id/amenu_wakeasusefi"/>
-
-            <item android:title="Start iTunes"
-                  android:id="@+id/amenu_itunes"/>
-
-            <item android:title="Shutown ASUS-EFI"
-                  android:id="@+id/amenu_shutdown"/>
+            <item android:title="Remote Mouse"
+                android:id="@+id/amenu_rmouse"/>
 
     </item>
 

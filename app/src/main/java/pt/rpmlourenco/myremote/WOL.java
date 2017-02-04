@@ -11,14 +11,6 @@ import java.net.UnknownHostException;
 
 class WOL extends AsyncTask<String, String, String> {
 
-    /*
-    public static void main(String[] args) throws IOException {
-        String macAddress = args[0];
-        int port = 9;
-        wakeUp(macAddress, port);
-    }
-    */
-
     private static void wakeUp(String macAddress, int port) throws IOException {
         byte[] bytes = getMagicBytes(macAddress);
         InetAddress address = getMulticastAddress();
