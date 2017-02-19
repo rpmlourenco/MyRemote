@@ -26,9 +26,9 @@ class TCPClientParams {
 
 class TCPClient extends AsyncTask<TCPClientParams, Void, String>
 {
-    public Activity activity;
+    public MainActivity activity;
 
-    public TCPClient(Activity a)
+    public TCPClient(MainActivity a)
     {
         this.activity = a;
     }
@@ -69,7 +69,8 @@ class TCPClient extends AsyncTask<TCPClientParams, Void, String>
     @Override
     protected void onPostExecute(String result)
     {
-        Toast.makeText(activity.getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(activity.getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+        activity.showAToast(result);
     }
 
 }

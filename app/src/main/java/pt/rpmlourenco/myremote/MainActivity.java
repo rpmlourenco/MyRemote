@@ -34,7 +34,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-    public static Activity activity;
+    public static MainActivity activity;
+    public Toast toast;
 
     @Override
     public void onAttachedToWindow() {
@@ -50,6 +51,7 @@ public class MainActivity extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
 
         activity = this;
+        toast = null;
 
         super.onCreate(savedInstanceState);
 
@@ -97,13 +99,15 @@ public class MainActivity extends Activity {
         if (id == R.id.amenu_wakep8z77i) {
 
             new WOL().execute(getString(R.string.P8Z77I_RUI_MAC));
-            Toast.makeText(activity.getApplicationContext(), "P8Z77I woken", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(activity.getApplicationContext(), "P8Z77I woken", Toast.LENGTH_SHORT).show();
+            showAToast("P8Z77I woken");
             return true;
         }
         if (id == R.id.amenu_wakeasusefi) {
 
             new WOL().execute(getString(R.string.ASUS_EFI_MAC));
-            Toast.makeText(activity.getApplicationContext(), "ASUS-EFI woken", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(activity.getApplicationContext(), "ASUS-EFI woken", Toast.LENGTH_SHORT).show();
+            showAToast("ASUS-EFI woken");
             return true;
         }
         if (id == R.id.amenu_itunes) {
@@ -140,4 +144,14 @@ public class MainActivity extends Activity {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
+
+    public void showAToast (String st){
+        try{ toast.getView().isShown();     // true if visible
+            toast.setText(st);
+        } catch (Exception e) {         // invisible if exception
+            toast = Toast.makeText(activity.getApplicationContext(), st, Toast.LENGTH_SHORT);
+        }
+        toast.show();  //finally display it
+    }
+
 }

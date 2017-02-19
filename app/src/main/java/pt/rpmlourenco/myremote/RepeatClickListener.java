@@ -47,7 +47,8 @@ public class RepeatClickListener implements View.OnClickListener {
                 irManager.transmit(this.repeatCmd.freq, this.repeatCmd.pattern);
             }
         } catch (Exception e) {
-            Toast.makeText(main.getApplicationContext(), "IR emitter not available", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(main.getApplicationContext(), "IR emitter not available", Toast.LENGTH_SHORT).show();
+            main.showAToast("IR emitter not available");
         }
     }
 
