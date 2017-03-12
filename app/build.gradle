@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'MyAndroidKey'
             keyPassword 'secret'
-            storeFile file('C:/Users/rpmlo/StudioProjects/android.jks')
+            storeFile file('../../android.jks')
             storePassword 'secret'
         }
     }
