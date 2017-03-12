@@ -1,8 +1,13 @@
 package pt.rpmlourenco.myremote;
 
-import android.app.Activity;
 import android.os.AsyncTask;
-import android.widget.Toast;
+
+import org.xbill.DNS.DClass;
+import org.xbill.DNS.Message;
+import org.xbill.DNS.Name;
+import org.xbill.DNS.Record;
+import org.xbill.DNS.SimpleResolver;
+import org.xbill.DNS.Type;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -33,15 +38,27 @@ class TCPClient extends AsyncTask<TCPClientParams, Void, String>
         this.activity = a;
     }
 
-    public static String tcpSend(String ip, int port, int timeout, String content)
+    public static String tcpSend(String hostname, int port, int timeout, String content)
     {
         String result;
         Socket clientSocket;
         try
         {
+            // Get IP Address of hostname
+            int type = Type.A, dclass = DClass.IN;
+            Name name = null;
+            name = Name.fromString(hostname, Name.root);
+            Message query, response;
+            Record rec;
+            SimpleResolver res = new SimpleResolver("192.168.1.1");
+            rec = Record.newRecord(name, type, dclass);
+            query = Message.newQuery(rec);
+            response = res.send(query);
+            String ip = response.getSectionRRsets(1)[0].first().rdataToString();
+
             clientSocket = new Socket();
             clientSocket.connect(new InetSocketAddress(ip, port), 1500);
-            //clientSocket = new Socket(ip, port);
+
             DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
             BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             outToServer.writeBytes(content + '\n');
@@ -55,7 +72,7 @@ class TCPClient extends AsyncTask<TCPClientParams, Void, String>
         }
         catch (Exception e)
         {
-            //e.printStackTrace();
+            e.printStackTrace();
             result = "Could not connect";
         }
         return result;

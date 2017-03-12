@@ -112,13 +112,13 @@ public class MainActivity extends Activity {
         }
         if (id == R.id.amenu_itunes) {
 
-            TCPClientParams params = new TCPClientParams(getString(R.string.ASUS_EFI_IP), 13000, 50000, "startitunes");
+            TCPClientParams params = new TCPClientParams(getString(R.string.ASUS_EFI), 13000, 50000, "startitunes");
             new TCPClient(activity).execute(params);
             return true;
         }
         if (id == R.id.amenu_shutdown) {
 
-            TCPClientParams params = new TCPClientParams(getString(R.string.ASUS_EFI_IP), 13000, 50000, "shutdown");
+            TCPClientParams params = new TCPClientParams(getString(R.string.ASUS_EFI), 13000, 50000, "shutdown");
             new TCPClient(activity).execute(params);
             return true;
         }

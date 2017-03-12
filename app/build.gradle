@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'MyAndroidKey'
             keyPassword 'secret'
-            storeFile file('C:/Users/Rui/StudioProjects/android.jks')
+            storeFile file('C:/Users/rpmlo/StudioProjects/android.jks')
             storePassword 'secret'
         }
     }
@@ -29,4 +29,5 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/dnsjava-2.1.8.jar')
 }

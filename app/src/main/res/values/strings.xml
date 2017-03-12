@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">IR-Remote</string>
     <string name="ASUS_EFI_IP">192.168.1.33</string>
+    <string name="ASUS_EFI">ASUS-EFI</string>
     <string name="P8Z77I_RUI_MAC">3085A9EBFBE1</string>
     <string name="ASUS_EFI_MAC">305A3A039D4C</string>
 </resources>
