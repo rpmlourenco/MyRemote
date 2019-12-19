@@ -10,11 +10,11 @@ android {
         }
     }
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "pt.rpmlourenco.myremote"
         minSdkVersion 21
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -28,6 +28,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/dnsjava-2.1.8.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/dnsjava-2.1.8.jar')
 }
